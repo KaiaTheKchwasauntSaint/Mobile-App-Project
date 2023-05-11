@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/simpleBackground"
+    tools:context=".MenuScreen">
+
+    <ImageView
+        android:id="@+id/menuLogo"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@drawable/logo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.299" />
+
+    <Button
+        android:id="@+id/btnContinue"
+        android:layout_width="320dp"
+        android:layout_height="50dp"
+        android:text="CONTINUE"
+        android:backgroundTint="@color/buttonColor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/menuLogo" />
+    <Button
+        android:id="@+id/btnNewgame"
+        android:layout_width="320dp"
+        android:layout_height="50dp"
+        android:backgroundTint="@color/buttonColor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:text="NEW GAME"
+        app:layout_constraintTop_toBottomOf="@id/btnContinue"/>
+
+    <Button
+        android:id="@+id/btnTopics"
+        android:layout_width="320dp"
+        android:layout_height="50dp"
+        android:backgroundTint="@color/buttonColor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:text="TOPICS"
+        app:layout_constraintTop_toBottomOf="@id/btnNewgame"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
