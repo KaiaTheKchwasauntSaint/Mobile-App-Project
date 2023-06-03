@@ -9,10 +9,10 @@
 
     <android.widget.Button
         android:id="@+id/homebutton"
-        android:layout_width="90dp"
-        android:layout_height="90dp"
+        android:layout_width="59dp"
+        android:layout_height="64dp"
         android:layout_margin="10dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="12dp"
         android:background="@drawable/logo"
         android:textAlignment="gravity"
         android:textColor="#C59FE5"
@@ -20,7 +20,45 @@
         android:textStyle="bold"
         app:layout_constraintTop_toTopOf="parent"
         tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="16dp" />
+        tools:layout_editor_absoluteX="26dp" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/timercardglow"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:outlineAmbientShadowColor="@color/timerglow"
+        android:outlineSpotShadowColor="@color/timerglow"
+        app:cardBackgroundColor="@color/timerglow"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="40dp"
+        app:layout_constraintBottom_toTopOf="@+id/mCardView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/timercard"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:textAlignment="center"
+            app:cardBackgroundColor="@color/timerglow"
+            app:cardCornerRadius="10dp"
+            app:layout_constraintBottom_toTopOf="@+id/mCardView"
+            tools:ignore="MissingConstraints">
+
+            <TextView
+                android:id="@+id/timerbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:layout_gravity="center"
+                android:textSize="30dp"
+                android:fontFamily="@font/chakra_petch_medium_italic"/>
+        </androidx.cardview.widget.CardView>
+
+    </androidx.cardview.widget.CardView>
 
     <android.widget.Button
         android:id="@+id/userdino"
@@ -53,8 +91,9 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
-            android:background="@drawable/usermenubtns2"
+            android:background="@drawable/wrongbtn"
             android:text="there"
+            android:fontFamily="@font/chakra_petch_medium_italic"
             android:textAlignment="gravity"
             android:textColor="#C59FE5"
             android:textSize="15sp"
@@ -69,8 +108,9 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
-            android:background="@drawable/usermenubtns2"
+            android:background="@drawable/wrongbtn"
             android:text="they"
+            android:fontFamily="@font/chakra_petch_medium_italic"
             android:textAlignment="gravity"
             android:textColor="#C59FE5"
             android:textSize="15sp"
@@ -90,8 +130,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout6"
-        app:layout_constraintVertical_bias="0.0"
+        app:layout_constraintTop_toBottomOf="@+id/mCardView"
+        app:layout_constraintVertical_bias="0.087"
         tools:ignore="MissingConstraints">
 
         <android.widget.Button
@@ -99,8 +139,9 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
-            android:background="@drawable/usermenubtns2"
+            android:background="@drawable/correctbtn"
             android:text="their"
+            android:fontFamily="@font/chakra_petch_medium_italic"
             android:textAlignment="gravity"
             android:textColor="#C59FE5"
             android:textSize="15sp"
@@ -115,8 +156,9 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
-            android:background="@drawable/usermenubtns2"
+            android:background="@drawable/wrongbtn"
             android:text="they're"
+            android:fontFamily="@font/chakra_petch_medium_italic"
             android:textAlignment="gravity"
             android:textColor="#C59FE5"
             android:textSize="15sp"
@@ -128,32 +170,64 @@
 
     </LinearLayout>
 
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/linearLayout6"
-        android:layout_width="330dp"
-        android:layout_height="320dp"
-        android:orientation="horizontal"
+    <androidx.cardview.widget.CardView
+        android:id="@+id/mCardView"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:outlineAmbientShadowColor="@color/btnGoHighlight"
+        android:outlineSpotShadowColor="@color/btnGoHighlight"
+        app:cardBackgroundColor="@color/btnGoHighlight"
+        app:cardElevation="60dp"
+        app:cardCornerRadius="10dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.286"
-        tools:ignore="MissingConstraints">
+        app:layout_constraintVertical_bias="0.232" >
 
         <androidx.cardview.widget.CardView
-            android:layout_width="300dp"
-            android:layout_height="300dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:cardElevation="10dp"
-            android:outlineAmbientShadowColor="@color/btnGo"
-            android:outlineSpotShadowColor="@color/btnGoHighlight"
-            />
+            android:layout_width="290dp"
+            android:layout_height="290dp"
+            android:layout_gravity="center"
+            app:cardBackgroundColor="@color/btnGo"
+            app:cardCornerRadius="10dp"
+            android:textAlignment="center"
+            android:id="@+id/cardView4">
 
-    </androidx.constraintlayout.widget.ConstraintLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1/10"
+                android:textAlignment="center"
+                android:layout_margin="15dp"
+                android:textSize="15dp"
+                android:fontFamily="@font/chakra_petch_medium_italic"
+                android:textColor="@color/white"/>
 
+            <TextView
+                android:layout_width="250dp"
+                android:layout_height="200dp"
+                android:layout_gravity="center"
+                android:textSize="25dp"
+                android:text="Anna saw Winslet and Poppy looking at the pool. _______ thinking of taking  quick dip before lunch."
+                android:fontFamily="@font/chakra_petch_medium_italic"
+                android:textColor="@color/white"
+                android:textAlignment="center"/>
+        </androidx.cardview.widget.CardView>
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/hover"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout5"
+        tools:ignore="MissingConstraints"
+        android:background="@drawable/correcthover"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
+
+

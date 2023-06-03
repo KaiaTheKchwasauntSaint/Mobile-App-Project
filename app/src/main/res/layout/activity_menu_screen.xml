@@ -25,10 +25,12 @@
         android:layout_width="320dp"
         android:layout_height="50dp"
         android:text="CONTINUE"
+        android:textColor="@color/white"
         android:backgroundTint="@color/buttonColor"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/menuLogo" />
+        app:layout_constraintTop_toBottomOf="@+id/menuLogo"
+        android:fontFamily="@font/chakra_petch_medium_italic"/>
     <Button
         android:id="@+id/btnNewgame"
         android:layout_width="320dp"
@@ -37,7 +39,9 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         android:text="NEW GAME"
-        app:layout_constraintTop_toBottomOf="@id/btnContinue"/>
+        android:textColor="@color/white"
+        app:layout_constraintTop_toBottomOf="@id/btnContinue"
+        android:fontFamily="@font/chakra_petch_medium_italic"/>
 
     <Button
         android:id="@+id/btnTopics"
@@ -47,6 +51,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         android:text="TOPICS"
+        android:textColor="@color/white"
+        android:fontFamily="@font/chakra_petch_medium_italic"
         app:layout_constraintTop_toBottomOf="@id/btnNewgame"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

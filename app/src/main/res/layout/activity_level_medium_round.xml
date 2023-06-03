@@ -4,6 +4,219 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".levelMediumRound">
+    android:background="@color/simpleBackground"
+    tools:context=".levelEasyRound">
+
+    <android.widget.Button
+        android:id="@+id/homebutton"
+        android:layout_width="59dp"
+        android:layout_height="64dp"
+        android:layout_margin="10dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/logo"
+        android:textAlignment="gravity"
+        android:textColor="#C59FE5"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="16dp" />
+
+    <android.widget.Button
+        android:id="@+id/userdino"
+        android:layout_width="60dp"
+        android:layout_height="70dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/userdinoicon"
+        android:textAlignment="gravity"
+        android:textColor="#C59FE5"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout7"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="MissingConstraints">
+
+        <android.widget.Button
+            android:id="@+id/ans1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/wrongbtn"
+            android:text="there"
+            android:fontFamily="@font/chakra_petch_medium_italic"
+            android:textAlignment="gravity"
+            android:textColor="#C59FE5"
+            android:textSize="15sp"
+            android:textStyle="bold"
+
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="219dp"
+            tools:layout_editor_absoluteY="379dp" />
+
+        <android.widget.Button
+            android:id="@+id/ans2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/wrongbtn"
+            android:text="they"
+            android:fontFamily="@font/chakra_petch_medium_italic"
+            android:textAlignment="gravity"
+            android:textColor="#C59FE5"
+            android:textSize="15sp"
+            android:textStyle="bold"
+
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="219dp"
+            tools:layout_editor_absoluteY="379dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mCardView"
+        app:layout_constraintVertical_bias="0.087"
+        tools:ignore="MissingConstraints">
+
+        <android.widget.Button
+            android:id="@+id/ans3"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/correctbtn"
+            android:text="their"
+            android:fontFamily="@font/chakra_petch_medium_italic"
+            android:textAlignment="gravity"
+            android:textColor="#C59FE5"
+            android:textSize="15sp"
+            android:textStyle="bold"
+
+            tools:ignore="ExtraText,MissingConstraints"
+            tools:layout_editor_absoluteX="219dp"
+            tools:layout_editor_absoluteY="379dp" />
+
+        <android.widget.Button
+            android:id="@+id/ans4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/wrongbtn"
+            android:text="they're"
+            android:fontFamily="@font/chakra_petch_medium_italic"
+            android:textAlignment="gravity"
+            android:textColor="#C59FE5"
+            android:textSize="15sp"
+            android:textStyle="bold"
+
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="219dp"
+            tools:layout_editor_absoluteY="379dp" />
+
+    </LinearLayout>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/timercardglow"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:outlineAmbientShadowColor="@color/timerglow"
+        android:outlineSpotShadowColor="@color/timerglow"
+        app:cardBackgroundColor="@color/timerglow"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="40dp"
+        app:layout_constraintBottom_toTopOf="@+id/mCardView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/timercard"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:textAlignment="center"
+            app:cardBackgroundColor="@color/timerglow"
+            app:cardCornerRadius="10dp"
+            app:layout_constraintBottom_toTopOf="@+id/mCardView"
+            tools:ignore="MissingConstraints">
+
+            <TextView
+                android:id="@+id/timerbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:layout_gravity="center"
+                android:textSize="30dp"
+                android:fontFamily="@font/chakra_petch_medium_italic"/>
+        </androidx.cardview.widget.CardView>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/mCardView"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:outlineAmbientShadowColor="@color/mediumQGlow"
+        android:outlineSpotShadowColor="@color/mediumQGlow"
+        app:cardBackgroundColor="@color/mediumQGlow"
+        app:cardElevation="60dp"
+        app:cardCornerRadius="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.232" >
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="290dp"
+            android:layout_height="290dp"
+            android:layout_gravity="center"
+            app:cardBackgroundColor="@color/mediumQCard"
+            app:cardCornerRadius="10dp"
+            android:textAlignment="center"
+            android:id="@+id/cardView4">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1/10"
+                android:textAlignment="center"
+                android:layout_margin="15dp"
+                android:textSize="15dp"
+                android:fontFamily="@font/chakra_petch_medium_italic"
+                android:textColor="@color/white"/>
+
+            <TextView
+                android:layout_width="250dp"
+                android:layout_height="200dp"
+                android:layout_gravity="center"
+                android:textSize="25dp"
+                android:text="Anna saw Winslet and Poppy looking at the pool. _______ thinking of taking  quick dip before lunch."
+                android:fontFamily="@font/chakra_petch_medium_italic"
+                android:textColor="@color/white"
+                android:textAlignment="center"/>
+        </androidx.cardview.widget.CardView>
+    </androidx.cardview.widget.CardView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
+
+

@@ -12,5 +12,7 @@
         <!-- Status bar color. -->
         <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
+        <item name="android:ambientShadowAlpha">1</item>
+        <item name="android:spotShadowAlpha">0.30</item>
     </style>
 </resources>

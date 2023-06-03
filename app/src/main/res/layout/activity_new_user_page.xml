@@ -22,8 +22,10 @@
         android:layout_height="50dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/logo"
+        app:layout_constraintVertical_bias="0.471"
         tools:ignore="MissingConstraints">
 
         <EditText
@@ -35,7 +37,8 @@
             android:textColor="@color/white"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent" />
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <android.widget.Button
@@ -47,27 +50,29 @@
         android:textAlignment="gravity"
         android:textColor="#064919"
         android:textSize="10sp"
+        android:fontFamily="@font/chakra_petch_medium_italic"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout3"
-        app:layout_constraintVertical_bias="0.171"
+        app:layout_constraintVertical_bias="0.1"
         tools:ignore="MissingConstraints" />
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="36dp"
-        android:fontFamily="monospace"
-        android:text="Player Name"
+        android:fontFamily="@font/chakra_petch_medium_italic"
+        android:text="Player Name:"
         android:textColor="@color/white"
         android:textSize="25dp"
         app:layout_constraintBottom_toTopOf="@+id/linearLayout3"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.831"
         tools:ignore="MissingConstraints" />
 
 

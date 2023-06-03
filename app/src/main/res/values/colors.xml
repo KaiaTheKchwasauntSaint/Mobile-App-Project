@@ -15,4 +15,11 @@
     <color name="btnGoHighlight">#18D620</color>
     <color name="btnMenu1">#C59FE5</color>
     <color name="btnMenu2">#816797</color>
+    <color name="mediumQCard">#D25C42</color>
+    <color name="mediumQGlow">#FF512B</color>
+    <color name="wrongBtn">#FF7070</color>
+    <color name="timerglow">#D6D5A8</color>
+    <color name="beginnerstat">#FF5E5E</color>
+    <color name="beginnerstatglow">#8E3535</color>
+    <color name="easyLevelStatus">#4C9074</color>
 </resources>

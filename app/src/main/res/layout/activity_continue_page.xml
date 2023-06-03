@@ -5,27 +5,28 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/simpleBackground"
-    tools:context=".UserMenu">
+    tools:context=".ContinuePage">
 
     <TextView
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/chakra_petch_medium_italic"
-        android:text="WELCOME,"
+        android:text="WELCOME BACK,"
         android:textColor="@color/white"
         android:textSize="25dp"
-        app:layout_constraintBottom_toTopOf="@+id/imageView2"
+        app:layout_constraintBottom_toTopOf="@+id/textView4"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
         tools:ignore="MissingConstraints" />
 
     <TextView
-        android:id="@+id/Name"
+        android:id="@+id/textView4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="36dp"
+        android:layout_marginBottom="60dp"
         android:fontFamily="@font/chakra_petch_medium_italic"
         android:text="KAIA"
         android:textColor="#E35C3E"
@@ -34,7 +35,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView2"
         tools:ignore="MissingConstraints" />
 
     <ImageView
@@ -109,7 +109,7 @@
 
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:background="@drawable/usermenubtns2">
+                    android:background="@drawable/usermenubtns">
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
@@ -117,7 +117,7 @@
                         android:fontFamily="@font/chakra_petch_medium_italic"
                         android:text="MEDIUM"
                         android:textAlignment="center"
-                        android:textColor="@color/btnMenu1"
+                        android:textColor="@color/btnMenu2"
                         android:textSize="18dp">
 
                     </TextView>
