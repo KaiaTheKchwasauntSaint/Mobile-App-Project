@@ -68,7 +68,7 @@ public class levelEasyRound extends AppCompatActivity {
         sample = (Button) findViewById(R.id.hover);
         click = (Button) findViewById(R.id.ans3);
 
-        sample.setTranslationY(300);
+        sample.setTranslationY(400);
         sample.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

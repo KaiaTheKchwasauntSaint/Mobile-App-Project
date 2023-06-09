@@ -1,9 +1,13 @@
 package com.example.eruuuu;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import android.os.Bundle;
 import android.view.WindowManager;
+
+import java.util.ArrayList;
 
 public class UserStatus extends AppCompatActivity {
 

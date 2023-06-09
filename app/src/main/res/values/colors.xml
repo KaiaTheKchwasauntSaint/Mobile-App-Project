@@ -22,4 +22,6 @@
     <color name="beginnerstat">#FF5E5E</color>
     <color name="beginnerstatglow">#8E3535</color>
     <color name="easyLevelStatus">#4C9074</color>
+    <color name="correcthover">#4CA217</color>
+    <color name="dotgreen">#FF80FF9C</color>
 </resources>

@@ -3,7 +3,9 @@ package com.example.eruuuu;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.viewpager.widget.ViewPager;
 
+import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
 import android.view.WindowManager;
@@ -24,14 +26,23 @@ public class HomeScreen extends AppCompatActivity {
         viewPager = findViewById(R.id.viewPagerImageSlider);
         slider_adapter = new Slider_Adapter(this);
         viewPager.setAdapter(slider_adapter);
-
+        SharedPreferences sharedPreferences = getSharedPreferences("MySharedPref", Context.MODE_PRIVATE);
+        SharedPreferences.Editor editor = sharedPreferences.edit();
         button = (Button) findViewById(R.id.button2);
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                openMenuScreen();
+                editor.putBoolean("IsFinished", true);
+                editor.apply();
+                Intent intent = new Intent(HomeScreen.this, MenuScreen.class);
+                startActivity(intent);
             }
         });
+        boolean isFinished = sharedPreferences.getBoolean("IsFinished", false);
+        if(isFinished){
+            Intent intent = new Intent(HomeScreen.this, MenuScreen.class);
+            startActivity(intent);
+        }
     }
 
     public void openMenuScreen() {
